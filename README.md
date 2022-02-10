@@ -15,8 +15,24 @@ HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\,
 HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\, 
 HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\
 ## Usage
-The script needs to be run with powershell (execute with powershell)
+The script needs to be run with powershell (execute with powershell). 
+The best way to run in Windows 7 is launch Powerhell, drag the script into it and click "Enter".
 
 All data will be stored in \Windows_InstalledPrograms\test\ (Windows 10+) or in C:\Windows_InstalledPrograms\ (Windows 7)
 
 If you have error: "Cannot load file because script execution is not allowed on this system", you need to allow scripts to run. Launch Powershell as Administrator and run: "Set-ExecutionPolicy RemoteSigned", or allow scripts to run through group policies or the registry.
+
+## Notice
+Version for Windows 10+ (WinVer_InstSoft_vx.x_Win10+) not working properly in Windows 7 because of another location of registers.
+
+## Version differences
+### v2.1
+Added sort by names
+
+Added division into types of programs (x64, x86)
+
+Slightly changed colors
+
+Added the total number of programs found
+
+![Снимок2 1](https://user-images.githubusercontent.com/71935087/153359539-5d954196-d910-4a47-9fed-c939c5eb2a0c.PNG)
